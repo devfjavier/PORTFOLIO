@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+</head>
+<body>
+    <HEADER class="HEADER">
+        <nav>
+            <ul class="menu" id="menu">
+                <li><a href="#index">Inicio</a></li>
+                <li><a href="#about-me">Sobre mi</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <button class="theme-button" id="theme-button">
+                    <span class="button" id="button"></span>
+                </button>
+            </ul>
+        </nav>
+        <!-- boton para activar menu desplegable -->
+        <button class="menu-button" id="menu-button"></button>
+    </HEADER>
+    <MAIN class="MAIN">
+
+        <!-- SECCION DEL BANNER -->
+        <section class="banner section-container" id="index">
+            <div class="container">
+                <div>
+                    <img src="IMG/photo.png" alt="">
+                </div>
+                <div>
+                    <h1 class="title">Soy Javier</h1>
+                    <p class="text">Desarrollador Fontend</p>
+                </div>
+            </div>
+            <span class="banner-bg-color"></span>
+        </section>
+
+        <!-- SECCION DEL ABOUT-ME -->
+        <section class="about-me section-container" id="about-me">
+            <h2 class="title">Sobre mi</h2>
+            <div class="container">
+                <div>
+                    <p>Soy desarrollador Front-end, maquetador, me gusta ser autodidacta y estar en constante aprendizaje, mis habilidades son HTML, CSS, JavaScipt y Git</p>
+                </div>
+                <div>
+                    <a class="resume" target="_blank" rel="noopener noreferrer" href="CV.pdf">Ver / Desargar CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION DEL PROJECTS -->
+        <section class="projects section-container" id="projects">
+            <h2 class="title">Proyectos</h2>
+            <div class="container">
+                <article class="proj">
+                    <div class="description">
+                        <h4 class="title">EDsoft</h4>
+                        <p class="text">Ofrece sus servicios para crear sitios web y muestra su experiencia</p>
+                        <p class="text">HTML, CSS, JavaScipt</p>
+                        <div class="links">
+                            <a class="proj-link" target="_blank" rel="noopener noreferrer" href="https://devfjavier.github.io/Proyecto-de-EDsoft/">Ver proyecto</a>
+                            <a class="repo-link" target="_blank" rel="noopener noreferrer" href="https://github.com/devfjavier/Proyecto-de-EDsoft">Repositorio</a>
+                        </div>
+                    </div>
+                    <div class="img-container"><img src="IMG/proj-EDsoft.png" alt="javier portfolio proyecto edsoft"></div>
+                </article>
+                
+                <article class="proj">
+                    <div class="description">
+                        <h4 class="title">Blog</h4>
+                        <p class="text">Un blog que tiene contenido de varios temas</p>
+                        <p class="text">HTML, CSS, JavaScipt</p>
+                        <div class="links">
+                            <a class="proj-link" target="_blank" rel="noopener noreferrer" href="https://devfjavier.github.io/Proyecto-de-Blog/">Ver proyecto</a>
+                            <a class="repo-link" target="_blank" rel="noopener noreferrer" href="https://github.com/devfjavier/Proyecto-de-Blog">Repositorio</a>
+                        </div>
+                    </div>
+                    <div class="img-container"><img src="IMG/proj-Blog.png" alt="javier portfolio proyecto Blog"></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCION DEL CONTACT -->
+        <section class="contact section-container" id="contact">
+            <h2 class="title">Contacto</h2>
+            <div class="container">
+                <a class="link-icon" title="LinkedIn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jafrontend">
+                    <img src="IMG/linkedin.svg" alt="">
+                </a>
+                <a class="link-icon" title="GitHub" target="_blank" rel="noopener noreferrer" href="https://github.com/devfjavier">
+                    <img src="IMG/github.svg" alt="">
+                </a>
+                <a class="link-icon" title="Gmail" target="_blank" rel="noopener noreferrer" href="mailto:devjavicont@gmail.com">
+                    <img src="IMG/email.svg" alt="">
+                </a>
+                <a class="link-icon" title="Twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/devfjavier">
+                    <img src="IMG/twitter.svg" alt="">
+                </a>
+            </div>
+        </section>
+    </MAIN>
+    <FOOTER class="FOOTER section-container">
+        <p class="text">© Copyright 2021. Javier Frontend</p>
+    </FOOTER>
+</body>
+</html>
