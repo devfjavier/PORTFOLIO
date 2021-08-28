@@ -2,9 +2,11 @@
 addEventListener("DOMContentLoaded", loadJS)
 
 function loadJS() {
-    // para el boton que activa el menu desplegable
-    const menuButton = document.getElementById("menu-button")
-    const menuHeader = document.getElementById("menu")
+    const hamburgerButton = document.getElementById("hamburger-button")
+    const hamburgerOpen = document.getElementById("open")
+    const hamburgerClose = document.getElementById("close")
+    
+    const menuHeader = document.getElementById("menu") //menu desplegable
     // para los links del menu
     const menuLink = Array.from(document.querySelectorAll(".HEADER .menu a"))
     // para el boton que cambiar color de la pagina
@@ -39,8 +41,10 @@ function loadJS() {
         "--theme-button-color"      : "rgb(27, 12, 66)"
     }
 
-    menuButton.addEventListener("click", () => {
+    hamburgerButton.addEventListener("click", () => {
         menuHeader.classList.toggle("is-active")
+        hamburgerOpen.classList.toggle("is-active")
+        hamburgerClose.classList.toggle("is-active")
     });
 
     menuLink.forEach(link => {
