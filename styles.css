@@ -182,7 +182,7 @@ boton hamburguesa para activar desactivar el menu despelgable
 }
 
 @media screen and (min-width: 1024px) {
-    .hamburger {
+    .hamburger-button {
         display: none;
     }
 }
