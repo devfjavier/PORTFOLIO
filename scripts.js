@@ -50,6 +50,10 @@ function loadJS() {
     menuLink.forEach(link => {
         link.addEventListener("click", () => {
             menuHeader.classList.remove("is-active")
+            hamburgerClose.classList.remove("is-active")
+            if (!hamburgerOpen.classList.contains("is-active")) {
+                hamburgerOpen.classList.add("is-active")
+            }
         })
     })
 
