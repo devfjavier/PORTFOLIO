@@ -13,8 +13,8 @@ function loadJS() {
     const themeButton = document.getElementById("theme-button")
     const activateButton = document.getElementById("button")
     const rootStyles = document.documentElement.style
-    const lightThemeActive = "translateX(-100%)"
-    const darkThemeActive = "translateX(0px)"
+    const lightThemeActive = "translateX(0px)"
+    const darkThemeActive = "translateX(100%)"
     let darkthemeState = false // el estado por defecto es lightTheme
     let lightTheme = {
         "--title-color"             : "#091210",
