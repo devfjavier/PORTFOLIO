@@ -82,7 +82,7 @@ CABECERA
     backdrop-filter: blur(.19rem);
     background-color: var(--bg-menu-color);
     transform: translate(270%, 0);
-    transition: 2.22s;
+    transition: .22s;
 }
 
 @media screen and (min-width: 1024px) {
