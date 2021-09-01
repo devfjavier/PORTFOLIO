@@ -67,62 +67,62 @@ body {
     margin-bottom: .09em;
 }
 
-/* CABECERA */
+/* 
+
+CABECERA
+
+*/
 
 .HEADER {
-    background-color: transparent;
-    z-index: 10;
+    position: fixed;
+    z-index: 9;
     width: 100%;
     top: 0;
+    bottom: 0;
+    backdrop-filter: blur(.19rem);
+    background-color: var(--bg-menu-color);
+    transform: translate(270%, 0);
+    transition: 2.22s;
 }
 
+@media screen and (min-width: 1024px) {
+    .HEADER {
+        bottom: initial;
+        transform: translate(0, 0);
+    }
+}
 
-/* menu deplegable / barra de menu de navegacion */
+.HEADER.is-active {
+    transform: translate(0, 0);
+}
 
+/* contenido del HEADER */
+.HEADER .panel {
+    width: 100%;
+    height: 100%;
+}
+/* .menu esta dentro de .panel */
 .HEADER .menu {
+    width: inherit;
+    height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: var(--bg-menu-color);
-    backdrop-filter: blur(.19rem);
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transform: translate(270%, 0);
-    transition: 0.15s;
 }
 
 @media screen and (min-width: 1024px) {
     .HEADER .menu {
         flex-direction: row;
         gap: 2rem;
-        bottom: initial;
-        transform: translate(0, 0);
-    }
-    
-}
-
-.HEADER .menu.is-active {
-    transform: translate(0, 0);
-    transition: 0.22s;
-}
-
-.HEADER .menu li {
-    list-style: none;
-    width: 100%;
-}
-
-@media screen and (min-width: 1024px) {
-    .HEADER .menu li {  
-        width: initial;
     }
 }
 
-.HEADER .menu li a {
+.HEADER .menu .item {
+    list-style: none;    
+}
+
+/* cada .link esta dentro de su .item */
+.HEADER .menu .link {
     display: block;
     padding: var(--font-medium-space);
     color: var(--title-color);
@@ -133,26 +133,15 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-    .HEADER .menu li a {
+    .HEADER .menu .link {
         font-size: var(--small-font-size);
         padding: var(--font-small-space);
-        text-shadow: none;
     }
 }
 
-.HEADER .menu li a:hover {
+.HEADER .menu .link:hover {
     color: var(--color-1);
-    text-shadow: none;
-    font-weight: bolder;
 }
-
-@media screen and (min-width: 1024px) {
-    .HEADER .menu li a:hover {
-        text-shadow: none;
-        font-weight: bolder;
-    }
-}
-
 
 /* 
 
