@@ -6,7 +6,7 @@ function loadJS() {
     const hamburgerOpen = document.getElementById("open")
     const hamburgerClose = document.getElementById("close")
     
-    const menuHeader = document.getElementById("menu") //menu desplegable
+    const menuHeader = document.getElementById("HEADER") //menu desplegable
     // para los links del menu
     const menuLink = Array.from(document.querySelectorAll(".HEADER .menu a"))
     // para el boton que cambiar color de la pagina
