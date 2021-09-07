@@ -338,7 +338,7 @@ SECCION DEL BANNER
     justify-content: center;
     z-index: 1;
     gap: 1rem;
-    padding: 8rem;
+    padding: 12%;
     border-radius: var(--medium-space);
     backdrop-filter: blur(2px);
 }
@@ -346,6 +346,7 @@ SECCION DEL BANNER
 @media screen and (min-width: 1024px) {
     .banner .container {
         flex-direction: row;
+        padding: 8rem;
     }
 }
 
