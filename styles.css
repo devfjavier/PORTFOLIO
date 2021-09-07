@@ -87,6 +87,7 @@ CABECERA
 
 @media screen and (min-width: 1024px) {
     .HEADER {
+        position: sticky;
         bottom: initial;
         transform: translate(0, 0);
     }
