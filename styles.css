@@ -417,16 +417,14 @@ SECCION DEL BANNER
     font-size: var(--small-font-size);
     font-weight: bold;
     text-decoration: none;
-    color: var(--color-1);
+    color: var(--theme-button-color);
     padding: var(--small-space);
     border-radius: var(--medium-space);
-    border: .16em solid var(--color-1);
+    border: .16em solid var(--theme-button-color);
 }
 
 .about-me .container .resume:hover {
-    border-color: var(--title-color);
-    color: var(--title-color);
-    background-color: var(--color-1);
+    background-color: var(--bg-theme-button-color);
 }
 
 .about-me .container .title {
