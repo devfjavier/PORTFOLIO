@@ -1,0 +1,76 @@
+.projects .container .proj {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects .container .proj .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    background-color: var(--color-2);
+    backdrop-filter: blur(2.2px);
+    padding: var(--small-space);
+    top: 100%;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .19s linear;    
+}
+.projects .container .proj:hover .description {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+}
+
+/* contenido de .description */
+.projects .container .proj .title,
+.projects .container .proj p {
+    text-shadow: .019em .019em .012em var(--bg-color);
+}
+.projects .container .proj .title {
+    font-size: var(--h4-font-size);
+    color: var(--bg-menu-color);
+}
+.projects .container .proj .text {
+    color: var(--bg-menu-color);
+    font-size: var(--smaller-font-size);
+    opacity: 0.9;
+}
+
+.projects .container .proj .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: var(--medium-space);
+    gap: var(--medium-space);
+}
+
+/* enlaces de .links */
+.projects .container .proj .proj-link,
+.projects .container .proj .repo-link {
+    text-decoration: none;
+    font-size: var(--smaller-font-size);
+    border-radius: var(--medium-space);
+    padding: var(--small-space);
+    color: var(--bg-menu-color);
+    border: .16em solid var(--bg-menu-color);
+    text-shadow: .019em .019em .012em var(--bg-menu-color);
+    
+}
+
+.projects .container .proj .proj-link:hover,
+.projects .container .proj .repo-link:hover {
+    background-color: var(--color-2);
+}
+
+.projects .container .proj .img-container {
+    z-index: -1;
+}
+
+.projects .container .proj .img-container img {
+    display: block;
+    width: 100%;
+}

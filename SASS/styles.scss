@@ -1,0 +1,14 @@
+//config
+@use "config";
+//sections
+@use "sections/header";
+@use "sections/footer";
+@use "sections/banner";
+@use "sections/about-me";
+@use "sections/projects";
+@use "sections/contact";
+//cards
+@use "cards/proj.scss";
+//buttons
+@use "buttons/menu-button";
+@use "buttons/theme-button";

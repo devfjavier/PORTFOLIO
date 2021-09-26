@@ -1,0 +1,90 @@
+/*
+
+SECCION DEL BANNER 
+
+*/
+
+.banner {
+    /* height: 100vh; */
+    background-image: url(IMG/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .banner-bg-color {
+    display: block;
+    position: absolute;
+    background-color: var(--banner-bg-color);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner .title {
+    color: var(--banner-title-color);
+    font-size: var(--h1-font-size);
+}
+
+.banner .text:last-child {
+    color: var(--banner-text-color);
+    font-size: var(--medium-font-size);
+}
+
+.banner .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    gap: 1rem;
+    padding: 12%;
+    border-radius: var(--medium-space);
+    backdrop-filter: blur(2px);
+}
+
+@media screen and (min-width: 1024px) {
+    .banner .container {
+        flex-direction: row;
+        padding: 8rem;
+    }
+}
+
+.banner .container > :first-child {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner .container > :first-child {
+        justify-content: flex-end;
+    }
+}
+
+.banner .container :first-child img {
+    display: block;
+    width: auto;
+    height: calc(var(--h2-font-size) * 4);
+}
+
+.banner .container :last-child {
+    grid-column: 2 / span 1;
+    grid-row: 1;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner .container :last-child {
+        text-align: left;
+    }
+}

@@ -1,0 +1,23 @@
+/* 
+
+SECCION PROJECTS
+
+*/
+
+.projects > .title {
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    text-align: center;
+}
+
+.projects .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--medium-space);
+}
+
+@media screen and (min-width: 1024px) {
+    .projects .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
