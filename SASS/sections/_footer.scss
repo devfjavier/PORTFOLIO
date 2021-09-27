@@ -5,8 +5,9 @@ SECCION DEL CONTACT
 */
 .FOOTER {
     padding: var(--medium-space);
-}
-.FOOTER .text {
-    color: var(--text-color);
-    text-align: center;
+    
+    .text {
+        color: var(--text-color);
+        text-align: center;
+    }
 }

@@ -51,14 +51,13 @@ CABECERA
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
 
-@media screen and (min-width: 1024px) {
-    .HEADER .menu {
+    @media screen and (min-width: 1024px) {
         flex-direction: row;
         gap: 2rem;
     }
 }
+
 
 .HEADER .menu .item {
     list-style: none;    
@@ -73,14 +72,13 @@ CABECERA
     text-align: center;
     text-decoration: none;
     font-size: var(--big-font-size);
-}
-
-@media screen and (min-width: 1024px) {
-    .HEADER .menu .link {
+    
+    @media screen and (min-width: 1024px) {
         font-size: var(--small-font-size);
         padding: var(--font-small-space);
     }
 }
+
 
 .HEADER .menu .link:hover {
     color: var(--color-1);

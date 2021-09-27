@@ -5,7 +5,6 @@ SECCION DEL BANNER
 */
 
 .banner {
-    /* height: 100vh; */
     background-image: url(IMG/banner-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,14 +46,13 @@ SECCION DEL BANNER
     padding: 12%;
     border-radius: var(--medium-space);
     backdrop-filter: blur(2px);
-}
 
-@media screen and (min-width: 1024px) {
-    .banner .container {
-        flex-direction: row;
-        padding: 8rem;
+    @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            padding: 8rem;
     }
 }
+
 
 .banner .container > :first-child {
     grid-column: 1 / span 1;
@@ -62,13 +60,12 @@ SECCION DEL BANNER
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
 
-@media screen and (min-width: 1024px) {
-    .banner .container > :first-child {
-        justify-content: flex-end;
+    @media screen and (min-width: 1024px) {
+            justify-content: flex-end;
     }
 }
+
 
 .banner .container :first-child img {
     display: block;
@@ -81,10 +78,8 @@ SECCION DEL BANNER
     grid-row: 1;
     text-align: center;
     white-space: nowrap;
-}
-
-@media screen and (min-width: 1024px) {
-    .banner .container :last-child {
-        text-align: left;
+    
+    @media screen and (min-width: 1024px) {
+            text-align: left;
     }
 }

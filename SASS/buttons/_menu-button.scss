@@ -19,17 +19,17 @@ boton hamburguesa para activar desactivar el menu despelgable
     border-radius: 3rem;
     padding: 1.5rem;
     transition: .12s;
-}
 
-.hamburger-button:active {
-    background-color: var(--title-color);
-}
-
-@media screen and (min-width: 1024px) {
-    .hamburger-button {
+    &:active {
+        background-color: var(--title-color);
+    }
+    
+    @media screen and (min-width: 1024px) {
         display: none;
     }
 }
+
+
 
 /* icono css del boton para abrir el menu */
 .hamburger-button .open {
