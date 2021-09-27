@@ -17,28 +17,20 @@ function loadJS() {
     const darkThemeActive = "translateX(100%)"
     let darkthemeState = false // el estado por defecto es lightTheme
     let lightTheme = {
-        "--title-color"             : "#091210",
-        "--text-color"              : "#202624",
-        "--banner-title-color"      : "rgb(246, 248, 248)",
-        "--banner-text-color"       : "#ecf0efef",
-        "--bg-color"                : "rgb(246, 248, 248)",
-        "--bg-menu-color"           : "#ecf0efdf",
-        "--color-1"                 : "#26b082",
-        "--color-2"                 : "#0b8c9166",
-        "--bg-theme-button-color"   : "rgb(98, 218, 245)",
-        "--theme-button-color"      : "rgb(16, 119, 80)"
+        "--title-color"             : "hsl(190, 100%, 4%)",
+        "--text-color"              : "hsl(190, 100%, 6%)",
+        "--bg-color"                : "hsl(190, 4%, 99%)",
+        "--bg-menu-color"           : "hsla(190, 6%, 96%, .9)",
+        "--bg-theme-button-color"   : "hsl(190, 100%, 80%)",
+        "--theme-button-color"      : "hsl(190, 100%, 26%)"
     }
     const darkTheme = {
-        "--title-color"             : "#f9ffff",
-        "--text-color"              : "#f2f2f2",
-        "--banner-title-color"      : "#f9ffff",
-        "--banner-text-color"       : "#f2f2f2",
-        "--bg-color"                : "#1c2b27",
-        "--bg-menu-color"           : "#151f2edf",
-        "--color-1"                 : "#0b8c91",
-        "--color-2"                 : "#26f6f666",
-        "--bg-theme-button-color"   : "rgb(28, 51, 226)",
-        "--theme-button-color"      : "rgb(27, 12, 66)"
+        "--title-color"             : "hsl(190, 100%, 98%)",
+        "--text-color"              : "hsl(190, 100%, 94%)",
+        "--bg-color"                : "hsl(190, 19%, 16%)",
+        "--bg-menu-color"           : "hsla(190, 95%, 9%, .8)",
+        "--bg-theme-button-color"   : "hsl(190, 100%, 26%)",
+        "--theme-button-color"      : "hsl(190, 100%, 2%)"
     }
 
     hamburgerButton.addEventListener("click", () => {

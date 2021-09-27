@@ -26,16 +26,12 @@
 }
 
 /* contenido de .description */
-.projects .container .proj .title,
-.projects .container .proj p {
-    text-shadow: .019em .019em .012em var(--bg-color);
-}
 .projects .container .proj .title {
     font-size: var(--h4-font-size);
-    color: var(--bg-menu-color);
+    color: var(--banner-title-color);
 }
 .projects .container .proj .text {
-    color: var(--bg-menu-color);
+    color: var(--banner-title-color);
     font-size: var(--smaller-font-size);
     opacity: 0.9;
 }
@@ -55,15 +51,14 @@
     font-size: var(--smaller-font-size);
     border-radius: var(--medium-space);
     padding: var(--small-space);
-    color: var(--bg-menu-color);
-    border: .16em solid var(--bg-menu-color);
-    text-shadow: .019em .019em .012em var(--bg-menu-color);
-    
+    color: var(--banner-title-color);
+    border: .16em solid var(--banner-title-color);    
 }
 
 .projects .container .proj .proj-link:hover,
 .projects .container .proj .repo-link:hover {
-    background-color: var(--color-2);
+    color: var(--color-1);
+    border-color: var(--color-1);
 }
 
 .projects .container .proj .img-container {
