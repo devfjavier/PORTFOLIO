@@ -5,6 +5,11 @@ SECCION DEL CONTACT
 */
 .FOOTER {
     padding: var(--medium-space);
+    padding-bottom: calc(var(--medium-space) * 6);
+    
+    @media screen and (min-width: 1024px) {
+        padding-bottom: var(--medium-space);
+    }
     
     .text {
         color: var(--text-color);
