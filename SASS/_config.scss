@@ -18,13 +18,26 @@
     --banner-text-color     : hsl(190, 100%, 96%);
     --color-2               : hsla(190, 90%, 2%, 0.72);
     --color-1               : hsl(190, 100%, 40%);
+
     /* color lightTheme */
-    --title-color           : hsl(190, 100%, 4%);
-    --text-color            : hsl(190, 100%, 6%);
-    --bg-color              : hsl(190, 4%, 99%);
-    --bg-menu-color         : hsla(190, 5%, 95%, .8);
-    --bg-theme-button-color : hsl(190, 100%, 80%);
-    --theme-button-color    : hsl(190, 100%, 26%);
+    @media (prefers-color-scheme: light) {
+        --title-color             : hsl(190, 100%, 4%);
+        --text-color              : hsl(190, 100%, 6%);
+        --bg-color                : hsl(190, 4%, 99%);
+        --bg-menu-color           : hsla(190, 6%, 96%, .9);
+        --bg-theme-button-color   : hsl(190, 100%, 80%);
+        --theme-button-color      : hsl(190, 100%, 26%);
+    }
+    
+    /* color darkTheme */
+    @media (prefers-color-scheme: dark) {
+        --title-color             : hsl(190, 100%, 98%);
+        --text-color              : hsl(190, 100%, 94%);
+        --bg-color                : hsl(190, 19%, 16%);
+        --bg-menu-color           : hsla(190, 95%, 9%, .8);
+        --bg-theme-button-color   : hsl(190, 100%, 26%);
+        --theme-button-color      : hsl(190, 100%, 2%);
+    }
 }
 
 html {
