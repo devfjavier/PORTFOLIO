@@ -28,17 +28,20 @@
 }
 
 .about-me .container .resume {
-    font-size: var(--small-font-size);
+    display: inline-block;
+    font-size: var(--medium-font-size);
+    letter-spacing: 1px;
     font-weight: bold;
     text-decoration: none;
-    color: var(--theme-button-color);
-    padding: var(--small-space);
-    border-radius: var(--medium-space);
-    border: .16em solid var(--theme-button-color);
+    color: var(--banner-title-color);
+    background-color: var(--color-1);
+    padding: var(--font-small-space);
+    border-radius: var(--big-font-size);
+    transition: .27s;
 }
 
 .about-me .container .resume:hover {
-    background-color: var(--bg-theme-button-color);
+    background-color: hsl(127, 90%, 27%);
 }
 
 .about-me .container .title {
