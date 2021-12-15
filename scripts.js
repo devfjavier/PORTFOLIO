@@ -1,6 +1,1 @@
-"use strict";
-addEventListener("DOMContentLoaded", loadJS)
-
-function loadJS() {
-
-}
+(()=>{var linksInteractWithScroll=(menuLinks2,sections2)=>{if(!sections2||!menuLinks2)return;const sectionsCoords=sections2.map(sect=>sect.getBoundingClientRect());const clientHeight=document.documentElement.clientHeight;if(scrollY>=sectionsCoords[0].top&&scrollY<=sectionsCoords[0].height*.72){menuLinks2[0].classList.add("active")}else{menuLinks2[0].classList.remove("active")}if(scrollY>sectionsCoords[0].height*.72&&screenY<=sectionsCoords[1].top+sectionsCoords[1].height*.72){menuLinks2[1].classList.add("active")}else{menuLinks2[1].classList.remove("active")}if(screenY>sectionsCoords[1].top+sectionsCoords[1].height*.72&&sectionsCoords[2].bottom>=clientHeight-sectionsCoords[3].height*.85){menuLinks2[2].classList.add("active")}else{menuLinks2[2].classList.remove("active")}if(sectionsCoords[2].bottom<clientHeight-sectionsCoords[3].height*.85){menuLinks2[3].classList.add("active")}else{menuLinks2[3].classList.remove("active")}};var linksInteractWithScroll_default=linksInteractWithScroll;var sections=null;var menuLinks=null;addEventListener("load",()=>{sections=Array.from(document.querySelectorAll(".section-container"));menuLinks=Array.from(document.querySelectorAll(".link"))});addEventListener("scroll",()=>linksInteractWithScroll_default(menuLinks,sections));})();
