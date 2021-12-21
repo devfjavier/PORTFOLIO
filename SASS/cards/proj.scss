@@ -43,15 +43,30 @@
     }
 
     /* enlaces de .links */
-    .proj-link,
-    .repo-link {
+    .proj-link, .repo-link {
         text-decoration: none;
-        font-size: var(--smaller-font-size);
+        font-size: var(--small-font-size);
         border-radius: var(--medium-space);
         padding: var(--small-space);
         color: var(--banner-title-color);
-        border: .16em solid var(--banner-title-color);
+        border: .16em solid transparent;
+    }
 
+    .proj-link {
+        color: black;
+        border-color: var(--banner-title-color);
+        background-color: var(--banner-title-color);
+        
+        &:hover {
+            color: var(--banner-title-color);
+            border-color: var(--color-1);
+            background-color: var(--color-1);
+        }
+    }
+    .repo-link {
+        color: var(--banner-title-color);
+        border-color: var(--banner-title-color);
+        
         &:hover {
             color: var(--color-1);
             border-color: var(--color-1);
