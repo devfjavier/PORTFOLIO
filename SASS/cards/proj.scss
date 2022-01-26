@@ -14,15 +14,15 @@
         width: 100%;
         height: 100%;
         transform: translateY(100%);
-        opacity: 0;
+        filter: opacity(0);
         transition: .19s linear;    
     }
-
+    
     &:hover .description {
-        opacity: 1;
+        filter: opacity(1);
         transform: translateY(0);
     }
-
+    
     /* contenido de .description */
     .title {
         font-size: var(--h4-font-size);
@@ -31,7 +31,7 @@
     .text {
         color: var(--banner-title-color);
         font-size: var(--smaller-font-size);
-        opacity: 0.9;
+        filter: opacity(.9);
     }
 
     .links {
