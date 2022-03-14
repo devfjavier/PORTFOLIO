@@ -6,10 +6,10 @@ let sections = null
 let menuLinks = null
 
 addEventListener("load", () => {
-    sections = Array.from(document.querySelectorAll(".section-container"))
+    sections = Array.from(document.querySelectorAll("section"))
     menuLinks = Array.from(document.querySelectorAll(".link"))
 })
 
-addEventListener("scroll", () => linksInteractWithScroll(menuLinks, sections))
+onscroll = () => sections && menuLinks && linksInteractWithScroll(menuLinks, sections)
 
 // function loadJS() {}

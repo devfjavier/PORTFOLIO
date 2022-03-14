@@ -1,36 +1,34 @@
-const linksInteractWithScroll = (menuLinks, sections) => {
-    if (!sections || !menuLinks) return
+const linksInteractWithScroll = ([l_home, l_about, l_projects, l_contact], sections) => {
 
-    const sectionsCoords = sections.map(sect => sect.getBoundingClientRect())
+    const [s_home, s_about, s_projects, s_contact] = sections.map(sect => sect.getBoundingClientRect())
     const clientHeight = document.documentElement.clientHeight
 
-    if (scrollY >= sectionsCoords[0].top && scrollY <= sectionsCoords[0].height * 0.72) {
-        menuLinks[0].classList.add("active")
-    }
-
-    else {
-        menuLinks[0].classList.remove("active")
-    }
-
-    if ((scrollY > sectionsCoords[0].height * 0.72) && (screenY <= sectionsCoords[1].top + (sectionsCoords[1].height * 0.72))) {
-        menuLinks[1].classList.add("active")
+    if (scrollY >= s_home.top && scrollY <= s_home.height * 0.72) {
+        l_home.classList.add("active")
     }
     else {
-        menuLinks[1].classList.remove("active")
+        l_home.classList.remove("active")
     }
 
-    if ((screenY > sectionsCoords[1].top + sectionsCoords[1].height * 0.72) && sectionsCoords[2].bottom >= clientHeight - sectionsCoords[3].height * 0.85) {
-        menuLinks[2].classList.add("active")
+    if ((scrollY > s_home.height * 0.72) && (screenY <= s_about.top + (s_about.height * 0.72))) {
+        l_about.classList.add("active")
     }
     else {
-        menuLinks[2].classList.remove("active")
+        l_about.classList.remove("active")
     }
 
-    if (sectionsCoords[2].bottom < clientHeight - sectionsCoords[3].height * 0.85) {
-        menuLinks[3].classList.add("active")
+    if ((screenY > s_about.top + s_about.height * 0.72) && s_projects.bottom >= clientHeight - s_contact.height * 0.85) {
+        l_projects.classList.add("active")
     }
     else {
-        menuLinks[3].classList.remove("active")
+        l_projects.classList.remove("active")
+    }
+
+    if (s_projects.bottom < clientHeight - s_contact.height * 0.85) {
+        l_contact.classList.add("active")
+    }
+    else {
+        l_contact.classList.remove("active")
     }
 }
 
