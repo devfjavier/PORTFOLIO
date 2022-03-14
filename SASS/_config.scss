@@ -59,6 +59,7 @@ body {
 }
 
 .section-container {
+    padding-top: var(--big-space);
     padding-left: 6%;
     padding-right: 6%;
     
@@ -66,10 +67,6 @@ body {
         padding-left: 12%;
         padding-right: 12%;
     }
-}
-
-.section-container:not(.banner) {
-    padding-top: var(--big-space);
 }
 
 .section-container > .title {
