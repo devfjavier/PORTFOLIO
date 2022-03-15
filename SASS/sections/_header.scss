@@ -55,10 +55,11 @@ CABECERA
         text-align: center;
         text-decoration: none;
         font-size: var(--smaller-font-size);
-        
-        &:active {
+
+        &:hover {
             color: var(--color-1);
         }
+        
         &.active {
             color: var(--color-1);
             border-color: var(--color-1);
@@ -74,6 +75,16 @@ CABECERA
             &:hover {
                 color: var(--color-1);
             }
+        }
+    }
+    
+    svg {
+        display: block;
+        width: 2.7rem;
+        margin: 0 auto;
+        
+        @media screen and (min-width: 1024px) {
+            display: none;
         }
     }
 }
