@@ -1,0 +1,26 @@
+:root {
+
+    //colores por defecto
+    --banner-title-color: hsl(190, 100%, 100%);
+    --banner-text-color: hsl(190, 100%, 96%);
+    --color-2: hsla(190, 90%, 2%, 0.72);
+    --color-1: hsl(127, 90%, 40%);
+
+    //color lightTheme
+    @media (prefers-color-scheme: light) {
+        --title-color: hsl(190, 100%, 4%);
+        --text-color: hsl(190, 100%, 6%);
+        --bg-color: hsl(190, 27%, 99%);
+        --bg-menu-color: hsla(190, 0%, 100%, .9);
+        --fill-color: hsl(127, 0%, 0%);
+    }
+
+    //color darkTheme
+    @media (prefers-color-scheme: dark) {
+        --title-color: hsl(190, 100%, 98%);
+        --text-color: hsl(190, 100%, 94%);
+        --bg-color: hsl(190, 19%, 9%);
+        --bg-menu-color: hsla(190, 90%, 9%, .9);
+        --fill-color: hsl(127, 100%, 100%);
+    }
+}
