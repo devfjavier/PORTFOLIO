@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "title": "HOMEPAGE",
+      "description": "Website of a fictitious company, it shows their website creation services, their projects they have worked on and who they are.",
+      "techs": "React.js, CSS/Sass, JavaScript"
+    },
+    {
+      "title": "BLOG",
+      "description": "A fake blog with content on many topics.",
+      "techs": "HTML, CSS/Sass, JavaScript"
+    },
+    {
+      "title": "PORTFOLIO",
+      "description": "My Portfolio.",
+      "techs": "HTML, CSS/Sass, JavaScript"
+    },
+    {
+      "title": "SPOTIFY CLONE",
+      "description": "It copies the user interface, it does not have the functionalities to play music.",
+      "techs": "Next.js, CSS/Sass, JavaScript"
+    },
+    {
+      "title": "RULE OF RUFFINI",
+      "description": "It can factor third degree polynomials equal to zero.",
+      "techs": "HTML, CSS, JavaScript"
+    },
+    {
+      "title": "RESTAURANT ORDERS",
+      "description": "The user can order the products of the restaurant and pay for them.",
+      "techs": "HTML, CSS/Sass, JavaScript"
+    },
+    {
+      "title": "ECOMMERCE",
+      "description": "A fititious ecommerce, it has a shopping cart and it sells cupcakes obtained from an API.",
+      "techs": "React.js, CSS/Sass, JavaScript"
+    },
+    {
+      "title": "SIGNAL CLONE",
+      "description": "It copies the user interface and it has the functionalities to switch between dark and light themes, and between spanish and english languages.",
+      "techs": "React.js, CSS/Sass, JavaScript"
+    }
+  ]
+}
