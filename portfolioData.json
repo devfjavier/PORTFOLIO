@@ -13,7 +13,7 @@
     {
       "title": "PORTFOLIO",
       "description": "My Portfolio.",
-      "techs": "HTML, CSS/Sass, JavaScript"
+      "techs": "Next.js, CSS/Sass, JavaScript"
     },
     {
       "title": "SPOTIFY CLONE",
@@ -37,7 +37,7 @@
     },
     {
       "title": "SIGNAL CLONE",
-      "description": "It copies the user interface and it has the functionalities to switch between dark and light themes, and between spanish and english languages.",
+      "description": "It copies the user interface and it has the functionalities to switch between dark and light themes, and switch between spanish and english languages.",
       "techs": "React.js, CSS/Sass, JavaScript"
     }
   ]
