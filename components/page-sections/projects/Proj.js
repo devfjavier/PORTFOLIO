@@ -19,7 +19,7 @@ export default function Proj({ title, description, techs }) {
         </div>
       </div>
       <div className="img-container">
-        <img src={`/IMG/proj-${pathTitle.toLowerCase()}.webp`} alt={"devfjavier project " + title.toLowerCase()} />
+        <img src={`${process.env.projPath}/IMG/proj-${pathTitle.toLowerCase()}.webp`} alt={"devfjavier project " + title.toLowerCase()} />
       </div>
     </article>
   )
