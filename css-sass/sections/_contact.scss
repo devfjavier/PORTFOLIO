@@ -4,7 +4,7 @@ SECCION DEL CONTACT
 
 */
 
-.contact {
+#contact {
   .title {
     color: var(--title-color);
     font-size: var(--h2-font-size);
@@ -20,20 +20,19 @@ SECCION DEL CONTACT
     @media screen and (min-width: 1024px) {
       grid-template-columns: auto auto auto auto;
     }
+  }
 
-    .link-icon {
+  .link-icon {
+    display: block;
+    width: var(--big-space);
+    border-radius: 50%;
+    overflow: hidden;
+
+    svg {
       display: block;
-      width: var(--big-space);
-      border-radius: 50%;
-      overflow: hidden;
-
-      svg {
-        display: block;
-        width: 100%;
-        height: auto;
-        fill: var(--fill-color);
-      }
+      width: 100%;
+      height: auto;
+      fill: var(--fill-color);
     }
-
   }
 }

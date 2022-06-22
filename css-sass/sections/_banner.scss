@@ -4,7 +4,7 @@ SECCION DEL BANNER
 
 */
 
-.banner {
+#index {
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.72);
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@ SECCION DEL BANNER
   }
 }
 
-.banner .container {
+#index .container {
   .title {
     color: var(--banner-title-color);
     font-size: var(--h1-font-size);

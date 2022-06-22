@@ -1,8 +1,8 @@
-.HEADER .item {
+#HEADER .item {
   list-style: none;
 }
 
-.HEADER .link {
+#HEADER .link {
   display: block;
   padding: var(--small-space) var(--small-space) calc(var(--small-space) * 0.4) var(--small-space);
   border-bottom: calc(var(--small-space) * 0.6) solid transparent;

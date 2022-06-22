@@ -11,7 +11,7 @@ export default function Proj({ title, description, techs }) {
         <p className="text">{techs}</p>
         <div className="links">
           <Link className="proj-link" href={`https://devfjavier.github.io/${pathTitle}/`}>
-            View website
+            View App
           </Link>
           <Link className="repo-link" href={`https://github.com/devfjavier/${pathTitle}`}>
             Source code

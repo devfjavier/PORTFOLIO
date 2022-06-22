@@ -2,7 +2,7 @@ import Link from "./ContactLink";
 
 export default function Contact() {
   return (
-    <section className="contact section-container" id="contact">
+    <section className="section-container" id="contact">
       <h2 className="title">Contact</h2>
       <div className="container">
         <Link contactName="LinkedIn" href="https://www.linkedin.com/in/devfjavier" />
