@@ -5,35 +5,35 @@ SECCION DEL CONTACT
 */
 
 .contact {
-    .title {
-        color: var(--title-color);
-        font-size: var(--h2-font-size);
-        text-align: center;
-    }
-    
-    .container {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: center;
-        gap: var(--big-space);
-        
-        @media screen and (min-width: 1024px) {
-            grid-template-columns: auto auto auto auto;
-        }
-        
-        .link-icon {
-            display: block;
-            width: var(--big-space);
-            border-radius: 50%;
-            overflow: hidden;
+  .title {
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    text-align: center;
+  }
 
-            svg {
-                display: block;
-                width: 100%;
-                height: auto;
-                fill: var(--fill-color);
-            }
-        }
-        
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: var(--big-space);
+
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: auto auto auto auto;
     }
+
+    .link-icon {
+      display: block;
+      width: var(--big-space);
+      border-radius: 50%;
+      overflow: hidden;
+
+      svg {
+        display: block;
+        width: 100%;
+        height: auto;
+        fill: var(--fill-color);
+      }
+    }
+
+  }
 }
