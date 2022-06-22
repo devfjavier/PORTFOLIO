@@ -3,7 +3,7 @@
     {
       "title": "HOMEPAGE",
       "description": "Website of a fictitious company, it shows their website creation services, their projects they have worked on and who they are.",
-      "techs": "React.js, CSS/Sass, JavaScript"
+      "techs": "React, CSS/Sass, JavaScript"
     },
     {
       "title": "BLOG",
@@ -13,12 +13,12 @@
     {
       "title": "PORTFOLIO",
       "description": "My Portfolio.",
-      "techs": "Next.js, CSS/Sass, JavaScript"
+      "techs": "Next, CSS/Sass, JavaScript"
     },
     {
       "title": "SPOTIFY CLONE",
-      "description": "It copies the user interface, it does not have the functionalities to play music.",
-      "techs": "Next.js, CSS/Sass, JavaScript"
+      "description": "It copies desktop and mobile user interface, it does not have the functionalities to play music.",
+      "techs": "Next, CSS/Sass, JavaScript"
     },
     {
       "title": "RULE OF RUFFINI",
@@ -32,13 +32,13 @@
     },
     {
       "title": "ECOMMERCE",
-      "description": "A fititious ecommerce, it has a shopping cart and it sells cupcakes obtained from an API.",
-      "techs": "React.js, CSS/Sass, JavaScript"
+      "description": "It has a shopping cart and its data is obtained from an API. Users can register with email, they will be assigned a random amount of fake money so they can pay for the products added to the cart.",
+      "techs": "React, CSS/Sass, TypeScript, Node, MongoDB"
     },
     {
       "title": "SIGNAL CLONE",
-      "description": "It copies the user interface and it has the functionalities to switch between dark and light themes, and switch between spanish and english languages.",
-      "techs": "React.js, CSS/Sass, JavaScript"
+      "description": "It copies mobile user interface and it has the functionalities to chat globally, switch between dark and light themes, and switch between spanish and english languages.",
+      "techs": "React, CSS/Sass, JavaScript, Node"
     }
   ]
 }
