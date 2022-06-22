@@ -14,8 +14,29 @@ SECCION PROJECTS
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--medium-space);
-
+  
   @media screen and (min-width: 1024px) {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+#projects .filters {
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  margin-bottom: var(--small-space);
+
+  button {
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    color: var(--fill-color);
+    padding: var(--small-space) var(--font-small-space);
+    border-radius: var(--medium-space);
+    margin: 0 var(--font-small-space);
+    background-color: var(--bg-menu-color);
+    
+    &.active {
+      background-color: var(--color-1);
+    }
   }
 }
